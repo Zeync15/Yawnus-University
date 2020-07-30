@@ -1,0 +1,226 @@
+/* General Settings*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    padding: 0.5em 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+hr {
+    width: 10%;
+    border: 2px solid #ccc;
+    margin-top: .2rem;
+}
+
+/* General Margin */
+.mt-1 {
+    margin-top: 1rem;
+}
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* HOMEPAGE */
+header h1 {
+    text-align: center;
+    background-color: yellow;
+    font-size: 2.5em;
+    padding: 0;
+}
+
+#navbar {
+    background: rgb(158, 235, 44);
+    text-align: center;
+    padding: .5rem;
+}
+
+#navbar ul li {
+    display: inline-block;
+    color: rgb(252, 249, 249);
+}
+
+#navbar ul li a{
+    color: rgb(252, 249, 249);
+}
+
+/* Slideshow */
+.slideshow-image {
+    float: left;
+    height: 650px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+/* News */
+.card {
+    margin: 0 1rem 1rem 1rem;
+    text-align: center;
+} 
+
+
+/* Events*/
+#events a {
+    font-size: 15px;
+    color: blue;
+}
+
+#events a:hover {
+    color: red;
+}
+
+/* ABOUT US PAGE*/
+#secondNavbar {
+    background: #ddd;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+#secondNavbar ul li {
+    display: inline-block;
+    color: black;
+    /* font-size: 1.5rem; */
+}
+
+#secondNavbar ul li a{
+    color: black;
+    padding: 0 1rem;
+}
+
+/* RESEARCH PAGE*/
+#research_tabs {
+    margin-bottom: 1rem;
+}
+
+#research_tabs ul {
+    list-style-type: disc;
+}
+
+#research_tabs ul li {
+    margin-left: 2rem;
+}
+
+/* CONTACT PAGE*/
+form input[type=text], input[type=email], input[type=number], textarea {
+        width: 90%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+        font-size: 1rem;
+}
+
+form input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 1rem;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: rgb(158, 235, 44);
+}
+
+/* Media Queries */
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+    }
+
+    #news_events {
+        grid-template-columns: 3fr 1fr;
+    }
+    
+    #news ul,
+    #apply ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #news ul {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #apply img {
+        height: 250px;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    #aboutContent {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    #researchContent {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    #research_tabs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #newsContent {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+    }
+
+    #latestNews ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #latestNews img {
+        height: 300px;
+    }
+    
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+

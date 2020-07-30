@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+header {
+    text-align: center;
+    background-color: yellow;
+    font-size: 2.5em;
+}
+
+hr {
+    width: 5%;
+    border: 2px solid #ccc;
+    margin-top: .2rem;
+}
+
+/* Standard background*/
+.jumbotron {
+    height: 100%;
+    background-color: #ddd; 
+    padding: 1rem;
+}
+
+.jumbotron h1 {
+    font-size: 50px;
+}
+
+/* General margin*/
+.mt-1 {
+    margin-top: 1rem;
+}
+.mx-1 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* HOMEPAGE*/
+/* Navbar */
+.navbar {
+    background: rgb(158, 235, 44);
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.navbar ul li {
+    display: inline-block;
+    color: rgb(252, 249, 249);
+}
+
+.navbar ul li a{
+    color: rgb(252, 249, 249);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Slideshow */
+.slideshow-image {
+    float: left;
+    width:  100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+/* News and events*/ 
+.news_and_events .grid-container {
+    display: grid;
+    grid-template-areas: 'news news news events';
+    grid-gap: 10px;
+    background-color: white;
+    padding: .1px;
+}
+
+.news_and_events .grid-container > div {
+    background-color: #ddd;
+    padding: 20px 10px;
+    font-size: 30px;
+}
+
+.news_items {
+    grid-area: news;
+}
+
+.events_items {
+    grid-area: events;
+}
+
+.news_items_img {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.news_item_img img {
+    margin: 5px;
+    width: 280px;
+    margin-right: 25px;
+}
+
+/* Apply to Uni*/
+.apply_items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.apply_items img {
+    margin: 5px;
+    width: 350px;
+    margin-right: 8px;
+}
+
+.apply_items h3 {
+    text-align: center;
+}
+
+/*ABOUT US*/
+/* About Us Navbar*/
+.aboutNavbar {
+    background: #ddd;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.aboutNavbar ul li {
+    display: inline-block;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.aboutNavbar ul li a{
+    color: black;
+    padding: 0 1rem;
+}
+
+.about_wrapper .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    background-color: white;
+}
+
+.about_wrapper .grid-container > div {
+    background-color: #ddd;
+    padding: 20px 10px;
+    font-size: 30px;
+}
+
+.about_items {
+	grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+  	grid-column-end: 3;
+}
+
+.text_items {
+	grid-row-start: 2;
+    grid-row-end:3 ;
+    grid-column-start: 1;
+  	grid-column-end: 3;
+}
+
+.event_items {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.about_wrapper .slideshow-image {
+    float: left;
+    width:  1230px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* CONTACT US*/
+/* Contact Us Form*/
+.contactUs h4, p{
+    font-size: 15px;
+}
+.contactUs > .grid-container {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    width: 100%;
+}
+  
+.contactUs > .grid-container > .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    background: #ddd;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.contactUs input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 1rem;
+}
+
+.contactUs label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.contactUs input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+}
+  
+.contactUs input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contactUs .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+footer {
+    background: rgb(158, 235, 44);
+    padding: 1rem;
+}
+
+footer .column {
+    float: left;
+    width: 33.3%;
+    padding: 1rem;
+}
+
+/*(clear floats) */
+footer .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer i {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-right: 1.5rem;
+}
